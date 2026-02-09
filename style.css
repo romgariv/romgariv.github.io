@@ -1,0 +1,260 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+}
+
+a {
+    color: #2a5db0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Layout ===== */
+.container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ===== Navigation ===== */
+nav {
+    border-bottom: 1px solid #ddd;
+    padding: 18px 0;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .site-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #222;
+}
+
+nav .site-name a {
+    color: inherit;
+}
+
+nav .site-name a:hover {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+nav ul a {
+    color: #555;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+
+nav ul a:hover {
+    color: #2a5db0;
+    text-decoration: none;
+}
+
+nav ul a.active {
+    color: #222;
+    font-weight: 600;
+}
+
+/* ===== Home Page: Bio Section ===== */
+.bio {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 48px 0 40px;
+}
+
+.bio-photo {
+    flex-shrink: 0;
+    width: 220px;
+}
+
+.bio-photo img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.bio-text h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 4px;
+    color: #222;
+}
+
+.bio-text .title {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.bio-text p {
+    margin-bottom: 14px;
+}
+
+.bio-text .contact {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #555;
+}
+
+.bio-text .contact a {
+    font-size: 15px;
+}
+
+/* ===== Research Page ===== */
+.page-content {
+    padding: 44px 0 60px;
+}
+
+.page-content h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: normal;
+    color: #222;
+    margin-bottom: 32px;
+}
+
+.section-heading {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #222;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.paper {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+.paper:last-child {
+    border-bottom: none;
+}
+
+.paper-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.paper-title a {
+    color: #2a5db0;
+}
+
+.paper-authors {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+.paper-journal {
+    font-size: 15px;
+    color: #555;
+    font-style: italic;
+}
+
+.paper-status {
+    font-size: 14px;
+    color: #777;
+    margin-top: 2px;
+}
+
+.paper-links {
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.paper-links a {
+    margin-right: 12px;
+}
+
+/* ===== Footer ===== */
+footer {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 640px) {
+    .bio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .bio-photo {
+        width: 180px;
+    }
+
+    nav .container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    body {
+        padding: 0 16px;
+    }
+
+    .page-content {
+        padding: 32px 0 48px;
+    }
+
+    .section-heading {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .paper {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .paper-title {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .paper-authors {
+        font-size: 14px;
+    }
+
+    .paper-journal,
+    .paper-status {
+        font-size: 13px;
+    }
+}
