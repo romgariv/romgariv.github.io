@@ -180,6 +180,10 @@ nav ul a.active {
     font-style: italic;
 }
 
+.paper-journal .journal-name {
+    font-weight: bold;
+}
+
 .paper-status {
     font-size: 14px;
     color: #777;
