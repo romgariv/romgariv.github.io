@@ -61,7 +61,7 @@ hr {
 
 /* ===== Layout ===== */
 .wrapper {
-    width: 885px;
+    max-width: 885px;
     margin: 0 auto;
 }
 
@@ -130,11 +130,6 @@ section {
 
 /* ===== Responsive ===== */
 @media print, screen and (max-width: 960px) {
-    .wrapper {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
     header, section {
         float: none;
         position: static;
